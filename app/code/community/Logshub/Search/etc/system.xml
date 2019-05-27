@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <logshubsearch translate="label">
+            <label>LogsHub.com Search</label>
+            <sort_order>10</sort_order>
+        </logshubsearch>
+    </tabs>
+    <sections>
+        <logshubsearch translate="label">
+            <class>separator-top</class>
+            <label>LogsHub.com Search</label>
+            <tab>logshubsearch</tab>
+            <sort_order>140</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>            
+            <groups>
+                <general translate="label">
+                    <label>General Configurations</label>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>    
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable translate="label">
+                            <label>Enable search box</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable>
+                        <api_domain translate="label">
+                            <label>API Domain</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </api_domain>
+                        <api_pub_key translate="label">
+                            <label>API Public Key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>REQUIRED! You can find it in your LogsHub.com dashboard</comment>
+                        </api_pub_key>
+                        <api_prod_limit translate="label">
+                            <label>API Products Limit</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </api_prod_limit>
+                        <api_cat_limit translate="label">
+                            <label>API Category Limit</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </api_cat_limit>
+                        <api_features translate="label">
+                            <label>API Features</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </api_features>
+                    </fields>
+                </general>
+                <appereance translate="label">
+                    <label>Appereance</label>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>    
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <container_selector translate="label">
+                            <label>HTML Container Selector</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>REQUIRED! Content of this block will be replaced by our search box. If you do not know what to pass here - contact us.</comment>
+                        </container_selector>
+                        <fullscreen translate="label">
+                            <label>Fullscreen</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </fullscreen>
+                        <startup_query translate="label">
+                            <label>Startup Query</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Query that will be executed after box click</comment>
+                        </startup_query>
+                        <currency translate="label">
+                            <label>Default currency</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </currency>
+                        <include_jquery translate="label">
+                            <label>Include jQuery</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This plugin depends on this library. If your store does not use it, select YES.</comment>
+                        </include_jquery>
+                    </fields>
+                </appereance>
+            </groups>
+        </logshubsearch>
+    </sections>  
+</config>
